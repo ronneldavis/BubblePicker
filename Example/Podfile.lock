@@ -1,0 +1,16 @@
+PODS:
+  - BubblePicker (0.1.0)
+
+DEPENDENCIES:
+  - BubblePicker (from `../`)
+
+EXTERNAL SOURCES:
+  BubblePicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BubblePicker: eddd07a82a65326cdbbf7320c7dd89d1d347a612
+
+PODFILE CHECKSUM: b394bb028fdabf634399a5b8f6a2bdb11924d872
+
+COCOAPODS: 1.2.0

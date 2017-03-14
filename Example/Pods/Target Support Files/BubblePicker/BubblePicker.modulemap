@@ -1,0 +1,6 @@
+framework module BubblePicker {
+  umbrella header "BubblePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
