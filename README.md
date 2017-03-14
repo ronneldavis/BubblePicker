@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/BubblePicker.svg?style=flat)](http://cocoapods.org/pods/BubblePicker)
 [![Platform](https://img.shields.io/cocoapods/p/BubblePicker.svg?style=flat)](http://cocoapods.org/pods/BubblePicker)
 
+![Bubble Picker GIF]
 (http://i.giphy.com/lyVR0Y9GrgKti.gif)
 
 ## Example
