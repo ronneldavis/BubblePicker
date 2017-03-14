@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BubblePicker_Example' do
+  pod 'BubblePicker', :path => '../'
+
+  target 'BubblePicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
