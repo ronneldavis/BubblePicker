@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/BubblePicker.svg?style=flat)](http://cocoapods.org/pods/BubblePicker)
 [![Platform](https://img.shields.io/cocoapods/p/BubblePicker.svg?style=flat)](http://cocoapods.org/pods/BubblePicker)
 
+A similar library for Android made by Irina Galata can be found [here](https://github.com/igalata/Bubble-Picker)
+
 ![Bubble Picker GIF]
 (http://i.giphy.com/lyVR0Y9GrgKti.gif)
 
@@ -18,11 +20,11 @@ BubblePicker requires a deployment target of atleast iOS 9.0 for UIKitDynamics
 
 ## Usage
 
-Setup 
+Setup the BubblePicker view
 
 ```Swift 
   bubblePicker = BubblePicker()
-  let arr = ["TV Shows", "Sports", "Movies", "Events", "Social", "Environment", "Causes", "News", "Technology", "Science", "People", "Places", "Music", "Photography"]
+  let arr = ["TV Shows", "Sports", "Technology", "Science", "People", "Places", "Music", "Photography"]
   bubblePicker.setup(items: arr)
 ```
 
@@ -83,3 +85,5 @@ ronnel_davis@yahoo.com, ronnel_davis@yahoo.com
 ## License
 
 BubblePicker is available under the MIT license. See the LICENSE file for more info.
+
+Copyright (c) 2017 Ronnel Davis
