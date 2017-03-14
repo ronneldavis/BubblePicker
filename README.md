@@ -28,7 +28,7 @@ let arr = ["TV Shows", "Sports", "Technology", "Science", "People", "Places", "M
 bubblePicker.setup(items: arr)
 ```
 
-Set theme to be either `<.light>` or `<.dark>`
+Set theme to be either `.light` or `.dark`
 
 ```Swift
 bubblePicker.theme = .light
