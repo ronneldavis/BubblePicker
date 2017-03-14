@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BubblePicker: eddd07a82a65326cdbbf7320c7dd89d1d347a612
+  BubblePicker: 60599eb2e53b673af056af6e5f5ab2f4c11bfb53
 
 PODFILE CHECKSUM: b394bb028fdabf634399a5b8f6a2bdb11924d872
 

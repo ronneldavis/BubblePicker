@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		224C1EB1989291F83195D6B1F3D36333 /* BubblePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034B60116CCEE1466CBF4884EA350ACC /* BubblePicker.swift */; };
 		22B10DDF1B1817D6019595C2FF728EE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		40C565F78A6B2732B403FAE45283B1A8 /* BubblePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FC6BE9BB4F8A19A5FE9EB6748867C /* BubblePicker-dummy.m */; };
 		57D84CC989D053B56FF47D0F0DE23B71 /* Pods-BubblePicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2946BE92C84AE2123CEA561EB3385EA /* Pods-BubblePicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		770CE4EE80263FC6F660613858152950 /* BubblePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F99863591569C0B131231FEB1BBB5D19 /* BubblePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E1A4CE18E9486B0A1B94BEEA124EB96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		7F9FA3446823697EC56DCF16DE5A110C /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33CC7376D45F94A9B0F9FA862812561 /* ReplaceMe.swift */; };
-		8198752E96C964CE81971132B1DFCAA7 /* BubblePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FC6BE9BB4F8A19A5FE9EB6748867C /* BubblePicker-dummy.m */; };
 		91D177CD5CB1CAE4E4863C68BCCDA75B /* Pods-BubblePicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3063401903DD116DB465853EBC8128 /* Pods-BubblePicker_Tests-dummy.m */; };
 		B25B3E2FAFB57D3594DD30159341A3D0 /* Pods-BubblePicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B440DBDB20DF7687BAADEA4099A435 /* Pods-BubblePicker_Example-dummy.m */; };
 		B9B226AE09DE26607A1A72069C8427DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -30,24 +30,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		034B60116CCEE1466CBF4884EA350ACC /* BubblePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BubblePicker.swift; sourceTree = "<group>"; };
 		0F3FC6BE9BB4F8A19A5FE9EB6748867C /* BubblePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BubblePicker-dummy.m"; sourceTree = "<group>"; };
 		148165B6AA5205AC243AFC03714524ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C684BC2C715E63FA14EFB4C5F18B2A3 /* Pods-BubblePicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BubblePicker_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3F3300938AD05883B85C7FDD4D46DB2D /* Pods-BubblePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BubblePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5514BD4E9F3ABD961086C70DCA9DCD2F /* Pods_BubblePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BubblePicker_Tests.framework; path = "Pods-BubblePicker_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5514BD4E9F3ABD961086C70DCA9DCD2F /* Pods_BubblePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BubblePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		583B8995258345B28F4186DEA831C567 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EAD8E070A6B097888E8ABE18C954010 /* Pods_BubblePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BubblePicker_Example.framework; path = "Pods-BubblePicker_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EAD8E070A6B097888E8ABE18C954010 /* Pods_BubblePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BubblePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B440DBDB20DF7687BAADEA4099A435 /* Pods-BubblePicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BubblePicker_Example-dummy.m"; sourceTree = "<group>"; };
 		763897553F977CDF9966FDE44681FDDB /* Pods-BubblePicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BubblePicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7E3063401903DD116DB465853EBC8128 /* Pods-BubblePicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BubblePicker_Tests-dummy.m"; sourceTree = "<group>"; };
 		8109019E2B4145585A7C81249C242368 /* Pods-BubblePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BubblePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		855ABD3E196BAC169363FE7D07F05BF0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8832D9B45A700B2517CF18AE33A7ED00 /* BubblePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BubblePicker.framework; path = BubblePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8832D9B45A700B2517CF18AE33A7ED00 /* BubblePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BubblePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC159F262FF91E1E53AC8CD7C5BDFEF /* BubblePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BubblePicker.xcconfig; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A872B4062420305A38F9562B4F02AB35 /* Pods-BubblePicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BubblePicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B1CEEE5C573A67D829613B2F841E7118 /* BubblePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BubblePicker.modulemap; sourceTree = "<group>"; };
-		B33CC7376D45F94A9B0F9FA862812561 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		B1CEEE5C573A67D829613B2F841E7118 /* BubblePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BubblePicker.modulemap; sourceTree = "<group>"; };
 		B43696F7F2402CDC90730EE442EC7717 /* Pods-BubblePicker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BubblePicker_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		B8E33DD714E0C1FE6D4D1550F1508014 /* Pods-BubblePicker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BubblePicker_Tests-resources.sh"; sourceTree = "<group>"; };
 		C2946BE92C84AE2123CEA561EB3385EA /* Pods-BubblePicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BubblePicker_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -56,9 +56,9 @@
 		D2F13AFE7439CDF50D79D58FE1041F12 /* Pods-BubblePicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BubblePicker_Example-umbrella.h"; sourceTree = "<group>"; };
 		D53E458B4D95608D23C2CFDFFE0CBB97 /* Pods-BubblePicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BubblePicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D5BC1F66E8BADCAF2BB7DEE81058127B /* Pods-BubblePicker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BubblePicker_Example-resources.sh"; sourceTree = "<group>"; };
-		E00700ECA3D2086D37AD56387AB76D76 /* Pods-BubblePicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BubblePicker_Tests.modulemap"; sourceTree = "<group>"; };
+		E00700ECA3D2086D37AD56387AB76D76 /* Pods-BubblePicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BubblePicker_Tests.modulemap"; sourceTree = "<group>"; };
 		E2BC86291FB11799BB6072F0A7328C69 /* Pods-BubblePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BubblePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E3F64BFFACDCD84AAA29636F64B21ECA /* Pods-BubblePicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BubblePicker_Example.modulemap"; sourceTree = "<group>"; };
+		E3F64BFFACDCD84AAA29636F64B21ECA /* Pods-BubblePicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BubblePicker_Example.modulemap"; sourceTree = "<group>"; };
 		EE3D2EC171DBEFB1DD72C6E39909A57F /* BubblePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BubblePicker-prefix.pch"; sourceTree = "<group>"; };
 		EE5D87963720DE8AB3655BCEB8288318 /* Pods-BubblePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BubblePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F99863591569C0B131231FEB1BBB5D19 /* BubblePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BubblePicker-umbrella.h"; sourceTree = "<group>"; };
@@ -156,15 +156,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		A6A5AD147B2FF0E7C4431422689C7661 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				B33CC7376D45F94A9B0F9FA862812561 /* ReplaceMe.swift */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		AF3E6399596B47B29BBE62A781BFB845 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,9 +173,8 @@
 		B90EBC7BDD6CDA9843A70D266598B869 /* BubblePicker */ = {
 			isa = PBXGroup;
 			children = (
-				A6A5AD147B2FF0E7C4431422689C7661 /* Classes */,
+				BE801893202005CBDBB6A87BF2B92BF7 /* Classes */,
 			);
-			name = BubblePicker;
 			path = BubblePicker;
 			sourceTree = "<group>";
 		};
@@ -194,6 +184,14 @@
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE801893202005CBDBB6A87BF2B92BF7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				034B60116CCEE1466CBF4884EA350ACC /* BubblePicker.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		CF464A58D4F85151FCE52489C777FC47 /* Pods-BubblePicker_Tests */ = {
@@ -276,7 +274,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73801BF4530F71CBB7CB30335DD77649 /* Build configuration list for PBXNativeTarget "BubblePicker" */;
 			buildPhases = (
-				C4E2D004494455578E5A29B26C7C5197 /* Sources */,
+				6E8AEAA9B8A03D92AD5ED2ACBB8E3373 /* Sources */,
 				F0DC1B4D400CAF010A7289972614D5DD /* Frameworks */,
 				26277D3BE395FE01576B19666FFC4F3F /* Headers */,
 			);
@@ -314,6 +312,17 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					7831337BBF78AA760B3CAE6434BDD271 = {
+						ProvisioningStyle = Automatic;
+					};
+					9F60E82A800F83460F036FE452397B13 = {
+						ProvisioningStyle = Automatic;
+					};
+					B097019BF63127E0AB6CAD64CE02380A = {
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -343,20 +352,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6E8AEAA9B8A03D92AD5ED2ACBB8E3373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C565F78A6B2732B403FAE45283B1A8 /* BubblePicker-dummy.m in Sources */,
+				224C1EB1989291F83195D6B1F3D36333 /* BubblePicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AAFFD0D383D03D17461B63C28781114A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				91D177CD5CB1CAE4E4863C68BCCDA75B /* Pods-BubblePicker_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C4E2D004494455578E5A29B26C7C5197 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8198752E96C964CE81971132B1DFCAA7 /* BubblePicker-dummy.m in Sources */,
-				7F9FA3446823697EC56DCF16DE5A110C /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,16 +381,52 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5C4BBBD5567EF3B38CC85DD6E2674C61 /* Debug */ = {
+		3AE99298F074306D0C3F2A7FF92E4BD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2BC86291FB11799BB6072F0A7328C69 /* Pods-BubblePicker_Tests.debug.xcconfig */;
+			baseConfigurationReference = 8DC159F262FF91E1E53AC8CD7C5BDFEF /* BubblePicker.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BubblePicker/BubblePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BubblePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BubblePicker/BubblePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BubblePicker;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		542E296D28E59629FD24A2BE3A932D1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2BC86291FB11799BB6072F0A7328C69 /* Pods-BubblePicker_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -389,7 +434,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-BubblePicker_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-BubblePicker_Tests/Pods-BubblePicker_Tests.modulemap";
@@ -399,6 +444,7 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_BubblePicker_Tests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -407,82 +453,7 @@
 			};
 			name = Debug;
 		};
-		8964A15E32A964776D1AB82167945BC5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE5D87963720DE8AB3655BCEB8288318 /* Pods-BubblePicker_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BubblePicker_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BubblePicker_Tests/Pods-BubblePicker_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BubblePicker_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -518,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -526,83 +497,17 @@
 			};
 			name = Debug;
 		};
-		A7F75F5EF2A16BF33BDADF3EB905CACB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8109019E2B4145585A7C81249C242368 /* Pods-BubblePicker_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BubblePicker_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BubblePicker_Example/Pods-BubblePicker_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BubblePicker_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D56F85984356475424559A41AB9EF2B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DC159F262FF91E1E53AC8CD7C5BDFEF /* BubblePicker.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BubblePicker/BubblePicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BubblePicker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BubblePicker/BubblePicker.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BubblePicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E751ECD43F1B564D62A35509ECCBA5A4 /* Debug */ = {
+		B385EFE060D9BD09553F89F638EA57B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3F3300938AD05883B85C7FDD4D46DB2D /* Pods-BubblePicker_Example.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -610,7 +515,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-BubblePicker_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-BubblePicker_Example/Pods-BubblePicker_Example.modulemap";
@@ -620,6 +525,7 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_BubblePicker_Example;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -629,16 +535,57 @@
 			};
 			name = Debug;
 		};
-		F42BF36AC08B42653C981D5D4E1E88C9 /* Debug */ = {
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDBEE9D5E17B8ECACEA3CE6B8B94AAA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8DC159F262FF91E1E53AC8CD7C5BDFEF /* BubblePicker.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -647,20 +594,94 @@
 				GCC_PREFIX_HEADER = "Target Support Files/BubblePicker/BubblePicker-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/BubblePicker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/BubblePicker/BubblePicker.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = BubblePicker;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
+		};
+		C929C2145F2F69640D0F660393E456A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8109019E2B4145585A7C81249C242368 /* Pods-BubblePicker_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BubblePicker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BubblePicker_Example/Pods-BubblePicker_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BubblePicker_Example;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D6B9ABB31E881B57D8E962535B128ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE5D87963720DE8AB3655BCEB8288318 /* Pods-BubblePicker_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BubblePicker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BubblePicker_Tests/Pods-BubblePicker_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BubblePicker_Tests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -668,8 +689,8 @@
 		0A6261E66C0F5B458286205D6D0B48C4 /* Build configuration list for PBXNativeTarget "Pods-BubblePicker_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E751ECD43F1B564D62A35509ECCBA5A4 /* Debug */,
-				A7F75F5EF2A16BF33BDADF3EB905CACB /* Release */,
+				B385EFE060D9BD09553F89F638EA57B4 /* Debug */,
+				C929C2145F2F69640D0F660393E456A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -677,8 +698,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
-				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -686,8 +707,8 @@
 		73801BF4530F71CBB7CB30335DD77649 /* Build configuration list for PBXNativeTarget "BubblePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F42BF36AC08B42653C981D5D4E1E88C9 /* Debug */,
-				D56F85984356475424559A41AB9EF2B4 /* Release */,
+				3AE99298F074306D0C3F2A7FF92E4BD8 /* Debug */,
+				BDBEE9D5E17B8ECACEA3CE6B8B94AAA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -695,8 +716,8 @@
 		AF3AC579A3DD5088580AFDA578954714 /* Build configuration list for PBXNativeTarget "Pods-BubblePicker_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C4BBBD5567EF3B38CC85DD6E2674C61 /* Debug */,
-				8964A15E32A964776D1AB82167945BC5 /* Release */,
+				542E296D28E59629FD24A2BE3A932D1E /* Debug */,
+				D6B9ABB31E881B57D8E962535B128ED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

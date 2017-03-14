@@ -21,30 +21,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25t-CY-ULU" customClass="BubblePicker" customModule="BubblePicker">
+                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are your tastes?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OV7-SZ-KQn">
-                                <rect key="frame" x="26" y="30" width="323" height="43"/>
+                                <rect key="frame" x="26" y="60" width="323" height="43"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell us your tastes so we can create better recommendations for you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyb-jJ-H1y">
-                                <rect key="frame" x="40" y="83" width="295" height="41"/>
+                                <rect key="frame" x="40" y="113" width="295" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25t-CY-ULU">
-                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="25t-CY-ULU" secondAttribute="trailing" id="3ju-vG-kMh"/>
                             <constraint firstItem="zyb-jJ-H1y" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="4kI-Cc-e6V"/>
                             <constraint firstItem="zyb-jJ-H1y" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="40" id="6AZ-Wq-WCc"/>
-                            <constraint firstItem="25t-CY-ULU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="7sa-LZ-ib2"/>
-                            <constraint firstItem="OV7-SZ-KQn" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="30" id="Dq4-MP-eid"/>
+                            <constraint firstItem="25t-CY-ULU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="7sa-LZ-ib2"/>
+                            <constraint firstItem="OV7-SZ-KQn" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="60" id="Dq4-MP-eid"/>
                             <constraint firstItem="zyb-jJ-H1y" firstAttribute="top" secondItem="OV7-SZ-KQn" secondAttribute="bottom" constant="10" id="co5-5J-p5X"/>
                             <constraint firstItem="25t-CY-ULU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="fQd-eG-l6e"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="25t-CY-ULU" secondAttribute="bottom" id="g5u-Bf-ObD"/>
