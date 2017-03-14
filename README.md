@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/BubblePicker.svg?style=flat)](http://cocoapods.org/pods/BubblePicker)
 [![Platform](https://img.shields.io/cocoapods/p/BubblePicker.svg?style=flat)](http://cocoapods.org/pods/BubblePicker)
 
+(http://i.giphy.com/lyVR0Y9GrgKti.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
