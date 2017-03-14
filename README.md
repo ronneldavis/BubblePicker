@@ -23,50 +23,50 @@ BubblePicker requires a deployment target of atleast iOS 9.0 for UIKitDynamics
 Setup the BubblePicker view
 
 ```Swift 
-  bubblePicker = BubblePicker()
-  let arr = ["TV Shows", "Sports", "Technology", "Science", "People", "Places", "Music", "Photography"]
-  bubblePicker.setup(items: arr)
+bubblePicker = BubblePicker()       // Or use a storyboard
+let arr = ["TV Shows", "Sports", "Technology", "Science", "People", "Places", "Music", "Photography"]
+bubblePicker.setup(items: arr)
 ```
 
 Set theme to be either `<.light>` or `<.dark>`
 
 ```Swift
-  bubblePicker.theme = .light
-  bubblePicker.theme = .dark
+bubblePicker.theme = .light
+bubblePicker.theme = .dark
 ```
 
 Set bubbles to be selected
 
 ```Swift 
-  bubblePicker.setSelectedBubble(3, true)
-  bubblePicker.setSelectedBubble(1, true) 
-  bubblePicker.setSelectedBubble(4, true)
+bubblePicker.setSelectedBubble(3, true)
+bubblePicker.setSelectedBubble(1, true) 
+bubblePicker.setSelectedBubble(4, true)
 ```
 
 Or to set them all in one go
 
 ```Swift 
-  bubblePicker.setSelectedBubbles([3, 1, 4], true);
+bubblePicker.setSelectedBubbles([3, 1, 4], true);
 ```
 
 Callbacks for when a user selects or deselects a bubble
 
 ```Swift
-  bubblePicker.onBubbleSelected({
-      index in
-      print(index)
-  })
+bubblePicker.onBubbleSelected({
+    index in
+    print(index)
+})
   
-  bubblePicker.onBubbleDeselected({
-      index in
-      print(index)
-  })
+bubblePicker.onBubbleDeselected({
+    index in
+    print(index)
+})
 ```
 
 To get indexes of all selected bubbles
 
 ```Swift
-  bubblePicker.getSelectedBubbles()
+let selectedIndices: [Int] = bubblePicker.getSelectedBubbles()
 ```
 
 ## Installation
