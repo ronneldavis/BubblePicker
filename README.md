@@ -80,7 +80,7 @@ pod "BubblePicker"
 
 ## Author
 
-ronnel_davis@yahoo.com, ronnel_davis@yahoo.com
+Ronnel Davis: ronneldavis1996@gmail.com
 
 ## License
 
