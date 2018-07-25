@@ -13,31 +13,13 @@ class ViewController: UIViewController {
 
     @IBOutlet var bubblePicker: BubblePicker!
 
+    let items = ["TV Shows", "Sports", "Movies", "Events", "Social", "Environment", "Causes", "News", "Technology", "Science", "People", "Places", "Music", "Photography"];
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        bubblePicker.setup(items: ["TV Shows", "Sports", "Movies", "Events", "Social", "Environment", "Causes", "News", "Technology", "Science", "People", "Places", "Music", "Photography"]);
-
-        bubblePicker.setSelectedBubble(3, true);
-        bubblePicker.setSelectedBubble(1, true);
-        bubblePicker.setSelectedBubble(4, true);
-
-        bubblePicker.setSelectedBubbles([3, 1, 4], true);
-
-        bubblePicker.onBubbleSelected({
-            index in
-            print(index)
-        })
-
-        bubblePicker.onBubbleDeselected({
-            index in
-            print(index)
-        })
-
-        print(bubblePicker.getSelectedBubbles());
-
-        bubblePicker.theme = .light
-
+        
+        bubblePicker.delegate = self;
+        bubblePicker.reloadData();
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,3 +29,23 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: BubblePickerDelegate {
+
+    func numberOfItems(in bubblepicker: BubblePicker) -> Int {
+        return items.count;
+    }
+
+    func bubblePicker(_: BubblePicker, nodeFor indexPath: IndexPath) -> BubblePickerNode {
+        let node = BubblePickerNode(title: items[indexPath.item], color: UIColor.red, image: UIImage());
+        return node;
+    }
+
+    func bubblePicker(_: BubblePicker, didSelectNodeAt indexPath: IndexPath) {
+
+    }
+
+    func bubblePicker(_: BubblePicker, didDeselectNodeAt indexPath: IndexPath) {
+
+    }
+
+}
