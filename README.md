@@ -63,6 +63,25 @@ func bubblePicker(_: BubblePicker, didDeselectNodeAt indexPath: IndexPath) {
 }
 ```
 
+Set and get selected nodes 
+
+```Swift
+
+bubblePicker.setSelected([0, 2, 3, 4]);
+bubblePicker.getSelected();
+
+```
+
+Bubble picker node properties
+
+```Swift
+
+public var font: UIFont = UIFont(name: "Avenir-Heavy", size: 14)!
+public var selectedFont: UIFont = UIFont(name: "Avenir", size: 22)!
+public var textColor: UIColor = UIColor.white
+
+```
+
 
 ## Installation
 

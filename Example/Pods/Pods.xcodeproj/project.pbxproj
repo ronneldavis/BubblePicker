@@ -10,7 +10,6 @@
 		224C1EB1989291F83195D6B1F3D36333 /* BubblePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034B60116CCEE1466CBF4884EA350ACC /* BubblePicker.swift */; };
 		22B10DDF1B1817D6019595C2FF728EE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		34DCD135210861E900468794 /* BubblePickerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DCD134210861E900468794 /* BubblePickerNode.swift */; };
-		34DCD1372108621B00468794 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DCD1362108621B00468794 /* Extensions.swift */; };
 		40C565F78A6B2732B403FAE45283B1A8 /* BubblePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FC6BE9BB4F8A19A5FE9EB6748867C /* BubblePicker-dummy.m */; };
 		57D84CC989D053B56FF47D0F0DE23B71 /* Pods-BubblePicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2946BE92C84AE2123CEA561EB3385EA /* Pods-BubblePicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		770CE4EE80263FC6F660613858152950 /* BubblePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F99863591569C0B131231FEB1BBB5D19 /* BubblePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,7 +36,6 @@
 		148165B6AA5205AC243AFC03714524ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C684BC2C715E63FA14EFB4C5F18B2A3 /* Pods-BubblePicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BubblePicker_Example-frameworks.sh"; sourceTree = "<group>"; };
 		34DCD134210861E900468794 /* BubblePickerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubblePickerNode.swift; sourceTree = "<group>"; };
-		34DCD1362108621B00468794 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3F3300938AD05883B85C7FDD4D46DB2D /* Pods-BubblePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BubblePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5514BD4E9F3ABD961086C70DCA9DCD2F /* Pods_BubblePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BubblePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		583B8995258345B28F4186DEA831C567 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				034B60116CCEE1466CBF4884EA350ACC /* BubblePicker.swift */,
-				34DCD1362108621B00468794 /* Extensions.swift */,
 				34DCD134210861E900468794 /* BubblePickerNode.swift */,
 			);
 			path = Classes;
@@ -366,7 +363,6 @@
 				40C565F78A6B2732B403FAE45283B1A8 /* BubblePicker-dummy.m in Sources */,
 				34DCD135210861E900468794 /* BubblePickerNode.swift in Sources */,
 				224C1EB1989291F83195D6B1F3D36333 /* BubblePicker.swift in Sources */,
-				34DCD1372108621B00468794 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

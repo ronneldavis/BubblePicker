@@ -9,8 +9,15 @@ import UIKit
 
 public class BubblePickerNode: UIView {
 
-    public var label: UILabel!
+    public var font: UIFont = UIFont(name: "Avenir-Heavy", size: 14)!
+    public var selectedFont: UIFont = UIFont(name: "Avenir", size: 22)!
+    public var textColor: UIColor = UIColor.white
+
+    var bubblepicker: BubblePicker!
+
+    var label: UILabel!
     var imageView: UIImageView!
+
     var index: Int!
     var isExpanded = false;
 
@@ -26,6 +33,11 @@ public class BubblePickerNode: UIView {
         let screenHeight = screenSize.height
         super.init(frame: CGRect(x: screenWidth/2 + marginLeft - 100 + CGFloat(arc4random_uniform(100)), y: screenHeight/2 - 100 + CGFloat(arc4random_uniform(100)), width: 100, height: 100))
 
+        imageView = UIImageView(image: image);
+        imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100);
+        imageView.alpha = 0;
+        self.addSubview(imageView);
+
         let maskPath = UIBezierPath(roundedRect: CGRect(x: 3, y: 3, width: frame.width - 6, height: frame.height - 6), cornerRadius: 47)
         let maskLayer = CAShapeLayer()
         maskLayer.frame = self.bounds
@@ -34,9 +46,9 @@ public class BubblePickerNode: UIView {
 
         self.label = UILabel(frame: self.bounds)
         self.label.text = title
-        self.label.textColor = UIColor.white
+        self.label.textColor = self.textColor
         self.label.textAlignment = .center
-        self.label.font = UIFont(name: "Avenir-Heavy", size: 14)
+        self.label.font = self.font;
         self.addSubview(self.label)
 
         self.backgroundColor = color
@@ -60,16 +72,24 @@ public class BubblePickerNode: UIView {
     }
 
     @objc func tapped(recogniser: UITapGestureRecognizer){
+        if(isExpanded){
+            self.bubblepicker.delegate?.bubblePicker(self.bubblepicker, didDeselectNodeAt: IndexPath(item: self.index, section: 0))
+            self.bubblepicker.selectedIndices.remove(at: self.bubblepicker.selectedIndices.index(of: self.index)!)
+        }
+        else{
+            self.bubblepicker.delegate?.bubblePicker(self.bubblepicker, didSelectNodeAt: IndexPath(item: self.index, section: 0))
+            self.bubblepicker.selectedIndices.append(self.index);
+        }
         setSelected(!isExpanded);
     }
 
-    public func setSelected(_ flag: Bool){
+    func setSelected(_ flag: Bool){
 
         isExpanded = flag;
 
-        BPAnimator.removeBehavior(BPDynamics)
-        BPAnimator.removeBehavior(BPGravity)
-        BPAnimator.removeBehavior(BPCollision)
+        self.bubblepicker.BPAnimator.removeBehavior(self.bubblepicker.BPDynamics)
+        self.bubblepicker.BPAnimator.removeBehavior(self.bubblepicker.BPGravity)
+        self.bubblepicker.BPAnimator.removeBehavior(self.bubblepicker.BPCollision)
 
         var maskPath: UIBezierPath!
 
@@ -78,18 +98,22 @@ public class BubblePickerNode: UIView {
 
             maskPath = UIBezierPath(roundedRect: CGRect(x: 3, y: 3, width: bounds.width - 6, height: bounds.height - 6), cornerRadius: 47)
 
+            imageView.frame = CGRect(x: 0, y: 0, width: 160, height: 160);
+            imageView.alpha = 0;
+
             self.label.frame = self.bounds
-            self.label.font = UIFont(name: "Avenir-Heavy", size: 14)
-            BPSelectedIndices.remove(at: BPSelectedIndices.index(of: self.index)!)
+            self.label.font = self.font
         }
         else{
             self.bounds = CGRect(origin: CGPoint.zero, size: CGSize(width: 160, height: 160))
 
+            imageView.frame = CGRect(x: 0, y: 0, width: 160, height: 160);
+            imageView.alpha = 0.5;
+
             maskPath = UIBezierPath(roundedRect: CGRect(x: 3, y: 3, width: bounds.width - 6, height: bounds.height - 6), cornerRadius: 77)
 
             self.label.frame = self.bounds
-            self.label.font = UIFont(name: "Avenir", size: 22)
-            BPSelectedIndices.append(self.index);
+            self.label.font = self.selectedFont;
         }
 
         let maskLayer = CAShapeLayer()
@@ -97,8 +121,8 @@ public class BubblePickerNode: UIView {
         maskLayer.path = maskPath.cgPath
         self.layer.mask = maskLayer
 
-        BPAnimator.addBehavior(BPDynamics)
-        BPAnimator.addBehavior(BPGravity)
-        BPAnimator.addBehavior(BPCollision)
+        self.bubblepicker.BPAnimator.addBehavior(self.bubblepicker.BPDynamics)
+        self.bubblepicker.BPAnimator.addBehavior(self.bubblepicker.BPGravity)
+        self.bubblepicker.BPAnimator.addBehavior(self.bubblepicker.BPCollision)
     }
 }

@@ -7,29 +7,28 @@
 
 import UIKit
 
-var BPSelectedIndices = [Int]()
-
-var BPAnimator: UIDynamicAnimator!
-var BPCollision: UICollisionBehavior!
-var BPGravity: UIFieldBehavior!
-var BPDynamics: UIDynamicItemBehavior!
-
 
 public protocol BubblePickerDelegate: AnyObject {
 
     func numberOfItems(in bubblepicker: BubblePicker) -> Int;
-
     func bubblePicker(_: BubblePicker, nodeFor indexPath: IndexPath) -> BubblePickerNode;
     func bubblePicker(_: BubblePicker, didSelectNodeAt indexPath: IndexPath);
     func bubblePicker(_: BubblePicker, didDeselectNodeAt indexPath: IndexPath);
-}
 
+}
 
 public class BubblePicker: UIView {
 
     public weak var delegate: BubblePickerDelegate?
+    public var selectedIndices = [Int]()
 
-    var circles = [BubblePickerNode]()
+    var nodes = [BubblePickerNode]()
+
+    var BPAnimator: UIDynamicAnimator!
+    var BPCollision: UICollisionBehavior!
+    var BPGravity: UIFieldBehavior!
+    var BPDynamics: UIDynamicItemBehavior!
+
     var gravPos: CGPoint!
 
     override public init(frame: CGRect) {
@@ -40,17 +39,34 @@ public class BubblePicker: UIView {
         super.init(coder: aDecoder);
     }
 
+    public func getSelected() -> [Int]{
+        return selectedIndices;
+    }
+
+    public func setSelected(_ arr: [Int]){
+        self.selectedIndices = arr;
+
+        for node in self.nodes{
+            if(selectedIndices.contains(node.index)){
+                node.setSelected(true);
+            }
+            else{
+                node.setSelected(false);
+            }
+        }
+    }
+
     public func reloadData(){
         
         guard let delegate = delegate else {
             return
         }
 
-        circles = [BubblePickerNode]()
+        nodes = [BubblePickerNode]()
         let items = delegate.numberOfItems(in: self);
 
         BPAnimator = UIDynamicAnimator(referenceView: self)
-        BPAnimator.setValue(true, forKey: "debugEnabled") // Private API. See the bridging header.
+        //BPAnimator.setValue(true, forKey: "debugEnabled") // Private API. See the bridging header.
         self.isUserInteractionEnabled = true
 
         BPGravity = UIFieldBehavior.radialGravityField(position: self.center)
@@ -60,18 +76,19 @@ public class BubblePicker: UIView {
         gravPos = CGPoint(x: frame.midX, y: frame.midY)
 
         for i in 0..<items{
-            let circle = delegate.bubblePicker(self, nodeFor: IndexPath(item: i, section: 0))
-            circle.index = i;
-            circles.append(circle);
-            self.addSubview(circle)
-            BPGravity.addItem(circle)
+            let node = delegate.bubblePicker(self, nodeFor: IndexPath(item: i, section: 0))
+            node.index = i;
+            node.bubblepicker = self;
+            nodes.append(node);
+            self.addSubview(node)
+            BPGravity.addItem(node)
         }
 
-        BPDynamics = UIDynamicItemBehavior(items: circles);
+        BPDynamics = UIDynamicItemBehavior(items: nodes);
         BPDynamics.allowsRotation = false;
         BPDynamics.resistance = 0.8
 
-        BPCollision = UICollisionBehavior(items: circles)
+        BPCollision = UICollisionBehavior(items: nodes)
         BPCollision.setTranslatesReferenceBoundsIntoBoundary(with: UIEdgeInsets(top: 0, left: -500, bottom: 0, right: -500))
 
         BPAnimator.addBehavior(BPDynamics)
@@ -88,7 +105,9 @@ public class BubblePicker: UIView {
         newX = max(0, newX);
         newX = min(frame.width, newX);
 
-        let newY = gravPos.y;
+        var newY = gravPos.y + recogniser.translation(in: self).y;
+        newY = max(frame.height*0.25, newY);
+        newY = min(frame.height*0.75, newY);
         
         switch recogniser.state {
         case .ended:
@@ -99,8 +118,7 @@ public class BubblePicker: UIView {
             BPGravity.position = CGPoint(x: newX, y: newY)
             break;
             
-        default:
-            print("panning");
+        default: break;
         }
     }
     

@@ -17,9 +17,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         bubblePicker.delegate = self;
         bubblePicker.reloadData();
+        bubblePicker.setSelected([0, 2, 3, 4]);
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,16 +38,16 @@ extension ViewController: BubblePickerDelegate {
     }
 
     func bubblePicker(_: BubblePicker, nodeFor indexPath: IndexPath) -> BubblePickerNode {
-        let node = BubblePickerNode(title: items[indexPath.item], color: UIColor.red, image: UIImage());
+        let node = BubblePickerNode(title: items[indexPath.item], color: UIColor.red, image: UIImage(named: "dubai.jpg")!);
         return node;
     }
 
     func bubblePicker(_: BubblePicker, didSelectNodeAt indexPath: IndexPath) {
-
+        print("Did select");
     }
 
     func bubblePicker(_: BubblePicker, didDeselectNodeAt indexPath: IndexPath) {
-
+        print("Did deselect");
     }
 
 }
