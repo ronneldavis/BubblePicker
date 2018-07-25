@@ -13,9 +13,13 @@ A similar library for Android made by Irina Galata can be found [here](https://g
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Upgrade Warning
+
+Version 1.0 of this library has undergone a comeplete rewrite and will require significant changes to your codebase if you were using the previous version. It now uses a delegate based architecture rather than the previous version which required closures.
+
 ## Requirements
 
-BubblePicker requires a deployment target of atleast iOS 9.0 for UIKitDynamics
+BubblePicker requires a deployment target of atleast iOS 9.0 for UIKitDynamics and Swift 4. 
 
 ## Usage
 
@@ -24,49 +28,39 @@ Setup the BubblePicker view
 ```Swift 
 bubblePicker = BubblePicker()       // Or use a storyboard
 let arr = ["TV Shows", "Sports", "Technology", "Science", "People", "Places", "Music", "Photography"]
-bubblePicker.setup(items: arr)
+bubblePicker.delegate = self;
+bubblePicker.reloadData();
 ```
 
-Set theme to be either `.light` or `.dark`
-
-```Swift
-bubblePicker.theme = .light
-bubblePicker.theme = .dark
-```
-
-Set bubbles to be selected
+Implement the delegate methods
 
 ```Swift 
-bubblePicker.setSelectedBubble(3, true)
-bubblePicker.setSelectedBubble(1, true) 
-bubblePicker.setSelectedBubble(4, true)
+extension ViewController: BubblePickerDelegate {
+
+    func numberOfItems(in bubblepicker: BubblePicker) -> Int {
+        return items.count;
+    }
+
+    func bubblePicker(_: BubblePicker, nodeFor indexPath: IndexPath) -> BubblePickerNode {
+        let node = BubblePickerNode(title: items[indexPath.item], color: UIColor.red, image: UIImage());
+        return node;
+    }
+}
 ```
 
-Or to set them all in one go
-
-```Swift 
-bubblePicker.setSelectedBubbles([3, 1, 4], true);
-```
-
-Callbacks for when a user selects or deselects a bubble
+Delegate callbacks for when a user selects or deselects a bubble
 
 ```Swift
-bubblePicker.onBubbleSelected({
-    index in
-    print(index)
-})
-  
-bubblePicker.onBubbleDeselected({
-    index in
-    print(index)
-})
+
+func bubblePicker(_: BubblePicker, didSelectNodeAt indexPath: IndexPath) {
+
+}
+
+func bubblePicker(_: BubblePicker, didDeselectNodeAt indexPath: IndexPath) {
+
+}
 ```
 
-To get indexes of all selected bubbles
-
-```Swift
-let selectedIndices: [Int] = bubblePicker.getSelectedBubbles()
-```
 
 ## Installation
 
@@ -85,4 +79,4 @@ Ronnel Davis: ronneldavis1996@gmail.com
 
 BubblePicker is available under the MIT license. See the LICENSE file for more info.
 
-Copyright (c) 2017 Ronnel Davis
+Copyright (c) 2018 Ronnel Davis
