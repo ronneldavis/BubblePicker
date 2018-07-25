@@ -26,8 +26,10 @@ BubblePicker requires a deployment target of atleast iOS 9.0 for UIKitDynamics a
 Setup the BubblePicker view
 
 ```Swift 
-bubblePicker = BubblePicker()       // Or use a storyboard
+
 let arr = ["TV Shows", "Sports", "Technology", "Science", "People", "Places", "Music", "Photography"]
+
+bubblePicker = BubblePicker()       // Or use a storyboard
 bubblePicker.delegate = self;
 bubblePicker.reloadData();
 ```
