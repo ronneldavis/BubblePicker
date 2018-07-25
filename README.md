@@ -7,8 +7,7 @@
 
 A similar library for Android made by Irina Galata can be found [here](https://github.com/igalata/Bubble-Picker)
 
-![Bubble Picker GIF]
-(http://i.giphy.com/lyVR0Y9GrgKti.gif)
+![Bubble Picker GIF](http://i.giphy.com/lyVR0Y9GrgKti.gif)
 
 ## Example
 
